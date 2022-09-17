@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Travel_Record_App.MainPage" BackgroundColor="Azure">
+
+    <StackLayout HorizontalOptions="Center"
+                 Margin="0,70,0,70" >
+        
+        <Label Text="Login" FontSize="60" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"/>
+        
+        <Entry Placeholder="Username" Margin="0,100,0,30" x:Name="username" FontSize="30" Keyboard="Email"/>
+        <Entry Placeholder="Password" x:Name="password" FontSize="30" IsPassword="True"/>
+        <Button Text="Login"  Background="lightgreen" Font="20" x:Name="login" Clicked="login_Clicked"/>
+        <Label Text="Dont have an Account?" FontSize="30" FontAttributes="None"/>
+        <Button Text="Register" Background="blue" Margin="0,20" Font="20" x:Name="register" Clicked="register_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
