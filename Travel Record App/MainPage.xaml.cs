@@ -18,6 +18,14 @@ namespace Travel_Record_App
         private void login_Clicked(object sender, EventArgs e)
         {
 
+            if (string.IsNullOrEmpty(username.Text) || string.IsNullOrEmpty(password.Text))
+            {
+
+            }
+            else
+            {
+
+            }
         }
 
         private void register_Clicked(object sender, EventArgs e)
