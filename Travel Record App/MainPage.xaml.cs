@@ -17,14 +17,18 @@ namespace Travel_Record_App
 
         private void login_Clicked(object sender, EventArgs e)
         {
+            //bool isLoggedIn = false;
+            //bool isLoggedOut = false;
+            bool isusernameEmpty = string.IsNullOrEmpty(username.Text);
+            bool ispasswordEmpty = string.IsNullOrEmpty(password.Text);
 
-            if (string.IsNullOrEmpty(username.Text) || string.IsNullOrEmpty(password.Text))
+            if (isusernameEmpty || ispasswordEmpty)
             {
-
+                DisplayAlert(Title, "incorrect or incomplete information", cancel: "cancel");
             }
             else
             {
-
+                Navigation.PushAsync(new HomePage());
             }
         }
 
