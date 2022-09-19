@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Travel_Record_App
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPage
+    public partial class ProfilePage : ContentPage
     {
-        public HomePage()
+        public ProfilePage()
         {
-            //InitializeComponent();
+            InitializeComponent();
         }
     }
 }

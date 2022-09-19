@@ -10,7 +10,8 @@ namespace Travel_Record_App
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //navigation page is used to move from one page front and back
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
