@@ -4,5 +4,20 @@
              x:Class="Travel_Record_App.App">
     <Application.Resources>
 
+        <ResourceDictionary>
+            <Color x:Key="ashColor">#43403F</Color>
+            <Color x:Key="black">#0A0B0A</Color>
+            <Color x:Key="blurrwhite">#C5CDC5</Color>
+            <Color x:Key="white">#f9f9f9</Color>
+            <Color x:Key="blue">#0C2249</Color>
+            <Color x:Key="green">#115A15</Color>
+
+
+            <Style x:Key="loginButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource green}"/>
+                <Setter Property="TextColor" Value="{StaticResource white}"/>
+
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
