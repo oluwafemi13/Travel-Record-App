@@ -18,6 +18,12 @@
                 <Setter Property="TextColor" Value="{StaticResource white}"/>
 
             </Style>
+            <Style x:Key="registerButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource blue}"/>
+                <Setter Property="TextColor" Value="{StaticResource white}"/>
+                
+
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
