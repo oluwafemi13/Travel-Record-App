@@ -34,7 +34,7 @@ namespace Travel_Record_App
 
         private void register_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new RegistrationPage());   
         }
     }
 }
