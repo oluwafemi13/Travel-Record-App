@@ -74,6 +74,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\DataSources\AndroidX.AppCompat.View.Menu.IMenuViewItemViewExtensions.datasource" />
+    <None Include="Properties\DataSources\AndroidX.AppCompat.Widget.FitWindowsViewGroupOnFitSystemWindowsEventArgs.datasource" />
+    <None Include="Properties\DataSources\AndroidX.AppCompat.Widget.IDecorContentParentExtensions.datasource" />
+    <None Include="Properties\DataSources\AndroidX.AppCompat.Widget.IDecorToolbarExtensions.datasource" />
+    <None Include="Properties\DataSources\AndroidX.AppCompat.Widget.ItemHoverEnterEventArgs.datasource" />
+    <None Include="Properties\DataSources\AndroidX.AppCompat.Widget.ItemHoverExitEventArgs.datasource" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
