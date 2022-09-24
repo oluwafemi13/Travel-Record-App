@@ -24,7 +24,7 @@ namespace Travel_Record_App.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            string dbName = "travel_db_sqlite";
+            string dbName = "travel_db_sql";
             //string folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, dbName);
             string folderPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "..", "Library");
             string fullPath = Path.Combine(folderPath, dbName);
