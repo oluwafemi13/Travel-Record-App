@@ -17,10 +17,16 @@ namespace Travel_Record_App.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            string dbName = "travel_db_sqlite";
-            //string folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, dbName);
-            string folderPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            string fullPath = Path.Combine(folderPath, dbName);
+            string dbName = "travel_db_sql";
+
+            /*string folderPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            string fullPath = Path.Combine(folderPath, dbName);*/
+            //string servername = @"LAPTOP-01CQPF63\\SQLEXPRESS";
+            string servername = "192.168.1.85";
+
+
+            string fullPath =$"Data Source={servername};Initial Catalog={dbName};Integrated Security=True;";
+            //string fullPath = $"Data Source={}; Initial Catalogue={}; User Id=; Password=; Trusted_Connection=true;";
             LoadApplication(new App(fullPath));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
